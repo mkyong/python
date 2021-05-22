@@ -2,13 +2,13 @@
 filename = "C:\\Users\\mkyong\\projects\\python\\io\\file.txt"
 
 # read a file using open() and close()
-f = open(filename)
-print(f.read())
-f.close()
+# f = open(filename)
+# print(f.read())
+# f.close()
 
 # read a file using with statement, auto close the opened file
-# with open(filename) as f:
-#    print(f.read())
+with open(filename) as f:
+    print(f.read())
 
 # read a file using try-finally
 # f = open(filename)
@@ -30,3 +30,10 @@ f.close()
 #    line = f.readlines()[1:] # skip the first line
 #
 #print(line)
+
+
+# r+
+# with open(filename, 'r+') as f:
+#    f.read()                    # move fp to end of the file
+#    f.write("new line \n")
+
